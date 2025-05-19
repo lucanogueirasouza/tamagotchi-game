@@ -59,6 +59,7 @@ def fazer_tamagotchi_comer(tamagotchi):
     tamagotchi["Energia:"] = limitar_valor(tamagotchi["Energia:"] + random_numero_especificacoes())
 
 def jogar():
+    limpar_tela()
     comecar_jogo = str(input(
         "Deseja começar o jogo? [S/N]: "
         )).lower().strip()
